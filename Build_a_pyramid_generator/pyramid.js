@@ -3,13 +3,13 @@
 
 // To achieve this, you will use the .repeat() method available to strings. This method accepts a number as an argument, 
 // specifying the number of times to repeat the target string. For example, using .repeat() to generate the string "Code! Code! Code!":
-
+// Run code using: node pyramid.js
 const character = "#";
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i));
+    rows.push(character.repeat(i + 1));
   }
 
   let result = ""
