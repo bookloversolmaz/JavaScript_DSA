@@ -29,11 +29,16 @@ function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + character.repeat(rowNumber) + " ". repeat(rowCount - rowNumber);
   }
 
-// 4.
+// 4. FINAL CODE:
 // Consider PEMDAS: Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction. 
-// This code will calculate the number of hashes/characters for each row 2 * rowNumber - 1
+// This code will calculate the number of hashes/characters for each row, which is 2 * rowNumber - 1
 
 function padRow(rowNumber, rowCount) {
   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ". repeat(rowCount - rowNumber);
 }
 // Above code creates a pyramid
+
+// Replace i = i + 1 with the increment operator i ++, which increases the variable by 1.
+for (let i = 0; i < count; i ++) {
+
+}
