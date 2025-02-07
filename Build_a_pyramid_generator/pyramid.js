@@ -29,7 +29,7 @@ function padRow(rowNumber, rowCount) {
     return " ".repeat(rowCount - rowNumber) + character.repeat(rowNumber) + " ". repeat(rowCount - rowNumber);
   }
 
-// 4. FINAL CODE:
+// 4.
 // Consider PEMDAS: Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction. 
 // This code will calculate the number of hashes/characters for each row, which is 2 * rowNumber - 1
 
@@ -38,7 +38,16 @@ function padRow(rowNumber, rowCount) {
 }
 // Above code creates a pyramid
 
+// 5.
 // Replace i = i + 1 with the increment operator i ++, which increases the variable by 1.
-for (let i = 0; i < count; i ++) {
+for (let i = 1; i < count; i ++) { //Start loop at one to avoid i + 1 in function body, i + 1, count
+  rows.push(padRow(i, count));  // Remember! i is the current row in the loop, count is the number of rows
+}
 
+// 6.
+// The code above misses of the botton row, the 8th row. Your original loop went for i values from 0 to 7, because count is 8 and your condition requires i 
+// to be less than count. Your loop is now running for i values from 1 to 7. Your loop needs to be updated to run when i is 8, too. Looking at your logic, this 
+// means your loop should run when i is less than or equal to count
+for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
 }
