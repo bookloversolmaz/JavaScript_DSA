@@ -51,3 +51,27 @@ for (let i = 1; i < count; i ++) { //Start loop at one to avoid i + 1 in functio
 for (let i = 1; i <= count; i++) {
   rows.push(padRow(i, count));
 }
+
+// 7.
+// This code will implement the pyramid generator until is reaches 0, or done
+// let continueLoop = false;
+// let done = 0;
+
+// while (continueLoop) {
+//   done++; }
+// //  To generate the pyramid again, push the result of calling padRow with done and count as the arguments to your rows array
+// rows.push(padRow(done, count));
+
+// 8.
+//  Refactored code above to remove need for contineLoop variable
+let done = 0;
+
+while (done !== count) {  // change !== to <= as the !== can lead to an infinite loop
+  done++;
+  rows.push(padRow(done, count));
+}
+
+//  9.
+// Refactor the above where done tracks the number of rows that have been generated. Arrays have a special length property that allows you to see how many values, or elements, are in the array
+// Note that rows.length in the padRow call would give you an off-by-one error, because done is incremented before the call. 
+// Update your condition to check if rows.length is less than count.
