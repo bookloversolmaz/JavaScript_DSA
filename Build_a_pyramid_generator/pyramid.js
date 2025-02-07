@@ -27,3 +27,8 @@ console.log(result);
 // #####
 // ######
 // #######
+
+
+function padRow(rowNumber, rowCount) { // To create a row, need to know which row it is on and the overall number of rows
+  return character.repeat(rowNumber);  // This will return the character multiplied by the row number. Note, cannot do character * rowNumber
+}
