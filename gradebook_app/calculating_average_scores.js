@@ -14,7 +14,8 @@
 // You can use the length property to get the total number of scores.
 
 function getAverage(scores) {
-    let sum = 0;
+    let sum = 0; //sum inside function to ensure that it is reset to 0 everytime getAverage is called
+    // if sum was outside the function, it would keep accumulating values for each function call
     for (let i = 0; i < scores.length; i++) {
       // loop over scores
       // find the number of scores using length
