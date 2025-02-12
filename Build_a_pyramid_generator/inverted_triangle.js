@@ -8,7 +8,7 @@ function padRow(rowNumber, rowCount) {
   return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
 }
 
-for (let i = count; i > 0; i = i - 1) {
+for (let i = count; i > 0; i--) {
     rows.push(padRow(i, count));   // push the result of calling padRow with your i and count variables to your rows array
   }
 
