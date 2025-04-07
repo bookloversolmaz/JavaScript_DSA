@@ -15,24 +15,24 @@ const cleanInput = (userText) => {
 //  when user clicks on the#check-btn element without entering a value into the #text-input element, 
 // an alert should appear with the text "Please input a value."
 const checkEmptyInput = (userText) => {
-    // trim removes whitepsaces from both ends of the string so " " becomes "" need to check for nothing rather than empty space
+    // trim removes whitespaces from both ends of the string so " " becomes "" need to check for nothing rather than empty space
     if (userText.trim() === "") {
         alert("Please input a value.");
         return true; // true means input IS empty
     }
         return false;
 };
-const isItAPalindrome = () => {
+const isItAPalindrome = (userText) => {
     // Implement cleanedInput
     const cleanedString = cleanInput(userText);
     // Reverse the cleaned string
     const reversedString = cleanedString.split("").reverse().join("");
     // Compare both iterations if identical return string "$`textInput` is a palindrome"
     if (cleanedString === reversedString) {
-        return `<span class="user-result">"${textInput.value} is a palindrome"</span>`
+        return `${userText} is a palindrome`
     } else {
         // If not identical return string "$`textInput` is not a palindrome"
-        return `<span class="user-result">"${textInput.value} is not a palindrome"</span>`
+        return `${userText} is not a palindrome`
     } 
 };
 
@@ -41,7 +41,7 @@ checkButton.addEventListener("click", () => {
     const userText = textInput.value; // Get fresh input on click
     // check if string is empty 
     if (checkEmptyInput(userText)) return;
-    // Process the message
+    // Implement the palindrome function
     const resultMessage = isItAPalindrome(userText);
     userResult.innerHTML = resultMessage; // Display result in the DOM
 });

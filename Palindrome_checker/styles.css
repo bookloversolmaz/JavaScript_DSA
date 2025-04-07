@@ -1,68 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #0a0a23;
-    color: #ffffff;
-  }
-  
-  .h1 {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-   
-  label {
-    color: #0a0a23;
-    margin-bottom: 20px;
-  }
-  
-  .check-btn {
-    width: 90px;
+#check-btn {
+    width: 120px;
+    padding: 12px 0;
+    font-size: 1rem;
     border: none;
-    padding: 10px;
-    border-radius: 15px;
+    border-radius: 25px;
     background-color: #5a01a7;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(90, 1, 167, 0.4);
   }
   
-  .text-input {
-    height: 30px;
-    width: 250px;
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 10px;
-    border: none;
-    border-bottom: 2px solid #5a01a7;
+  #check-btn:hover {
+    background-color: #7a26d6;
+    transform: scale(1.05);
   }
   
-  .text-input:focus {
-    border-bottom: 3px solid #5a01a7;
-  }
-  
-  .text-input::placeholder {
-    text-align: center;
-  }
-  
-  .user-input {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .results-div {
-    overflow-y: auto;
-    word-wrap: break-word;
-    min-height: 50px;
-    color: black;
-  }
-  
-  .hidden {
-    display: none;
-  }
