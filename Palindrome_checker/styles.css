@@ -1,18 +1,73 @@
-#check-btn {
-    width: 120px;
-    padding: 12px 0;
-    font-size: 1rem;
-    border: none;
-    border-radius: 25px;
-    background-color: #5a01a7;
-    color: #ffffff;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(90, 1, 167, 0.4);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  #check-btn:hover {
-    background-color: #7a26d6;
-    transform: scale(1.05);
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0a0a23;
+    color: #ffffff;
+  }
+  
+  .h1 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+   
+  label {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  #check-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: #e63946; /* strong red */
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 8px; /* just slightly rounded corners for a modern square look */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #text-input {
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+  }
+  
+  #text-input:focus {
+    border-bottom: 3px solid #5a01a7;
+  }
+  
+  #text-input::placeholder {
+    text-align: center;
+  }
+  
+  .user-result {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .input-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  #result {
+    text-align: center;
+    margin-top: 20px;
   }
   
