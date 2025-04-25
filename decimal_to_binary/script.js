@@ -2,6 +2,18 @@ const numberInput = document.getElementById("number-input");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("result");
 
+const decimalToBinary = (input) => {
+  const inputs = [];
+  const quotients = [];
+  const remainders = [];
+
+  input = 0;
+
+  while (input > 0) {
+
+  }
+};
+
 const checkUserInput = () => {
   if (
     !numberInput.value ||
@@ -9,10 +21,11 @@ const checkUserInput = () => {
     parseInt(numberInput.value) < 0
   ) {
     alert("Please provide a decimal number greater than or equal to 0");
-
+    return;
   }
 
-  console.log(numberInput.value);
+  decimalToBinary(parseInt(numberInput.value));
+  numberInput.value = "";
 };
 
 convertBtn.addEventListener("click", checkUserInput);
